@@ -40,6 +40,7 @@ with open('file.txt', 'r') as f:
                 # 将a2,c,a1拼接成字符串表达式，并用eval方法计算这个表达式，结果存入result
                 result = eval(a2+c+a1)
                 print(a2, c, a1, '=', result)
+                # result入栈前用str方法装成字符串
                 stack.push(str(result))
         print(stack.pop())
         # 如果栈不为空（栈里还有内容）则报错
